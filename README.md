@@ -1,32 +1,32 @@
-# Project PROJECT_NAME
+# Project Fowl Cyborg vs The Poultergeists
 
 [Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Here-Cheatsheet)
 
 ### Student Info
 
--   Name: YOUR NAME
--   Section: ##
+-   Name: Esther Loo
+-   Section: 05
 
 ## Game Design
 
--   Camera Orientation: _How are the art assets viewed from? (ie. topdown or side)_
--   Camera Movement: _How does the camera move in your game? (if at all)_
--   Player Health: _How are you handling player health? (healthbar, lives, ?)_
--   End Condition: _How does a game/round/level end?_
--   Scoring: _How does the player earn points in your game?_
+-   Camera Orientation: Side
+-   Camera Movement: Side scrolling
+-   Player Health: Lives
+-   End Condition: Run out of lives
+-   Scoring: Collecting point collectibles and getting enemies
 
 ### Game Description
 
-_A brief explanation of your game. Inculde what is the objective for the player. Think about what would go on the back of a game box._
+Travel to a different dimension as a... cyborg duck??? This mallard has a fowl reputation, so you'll have a duck-load of enemies! Make sure to duck and weave between the deadly poultergeist projectiles that come for you. Migrate towards the bread crumbs to increase your score. Don't worry; just wing-it!
 
 ### Controls
 
 -   Movement
-    -   Up: 
-    -   Down: 
-    -   Left: 
-    -   Right: 
--   Fire: 
+    -   Up: W
+    -   Down: S 
+    -   Left: A
+    -   Right: D
+-   Fire: Space Bar
 
 ## You Additions
 
