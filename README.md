@@ -10,7 +10,7 @@
 ## Game Design
 
 -   Camera Orientation: Side
--   Camera Movement: Side scrolling
+-   Camera Movement: Side-scrolling
 -   Player Health: Lives
 -   End Condition: Run out of lives
 -   Scoring: Collecting point collectibles and getting enemies
@@ -30,11 +30,12 @@ Travel to a different dimension as a... cyborg duck??? This mallard has a fowl r
 
 ## You Additions
 
-_List out what you added to your game to make it different for you_
+There will be multiple types of enemies (at least one that shoots and one that only charges towards the player). Also, instead of being completely screen-wrapping, the player can only screen wrap from the top and the bottom of the screen, but not left or right.
 
 ## Sources
 
--   _List all project sources here –models, textures, sound clips, assets, etc._
+- Player Sprite: Esther Loo  
+- _List all project sources here –models, textures, sound clips, assets, etc._
 -   _If an asset is from the Unity store, include a link to the page and the author’s name_
 
 ## Known Issues
