@@ -10,7 +10,7 @@
 ## Game Design
 
 -   Camera Orientation: Side
--   Camera Movement: Side-scrolling
+-   Camera Movement: Fixed
 -   Player Health: Lives
 -   End Condition: Run out of lives
 -   Scoring: Collecting point collectibles and getting enemies
