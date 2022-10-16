@@ -30,13 +30,11 @@ Travel to a different dimension as a... cyborg duck??? This mallard has a fowl r
 
 ## You Additions
 
-There will be multiple types of enemies (at least one that shoots and one that only charges towards the player). Also, instead of being completely screen-wrapping, the player can only screen wrap from the top and the bottom of the screen, but not left or right.
+There are 5 different types of enemies, and some are more likely to spawn than others. I also made all of the art featured in this game.
 
 ## Sources
 
-- Player Sprite: Esther Loo  
-- _List all project sources here –models, textures, sound clips, assets, etc._
--   _If an asset is from the Unity store, include a link to the page and the author’s name_
+- Art assets: Esther Loo
 
 ## Known Issues
 
