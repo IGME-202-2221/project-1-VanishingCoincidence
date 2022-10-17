@@ -38,7 +38,7 @@ There are 5 different types of enemies, and some are more likely to spawn than o
 
 ## Known Issues
 
-No known issues.
+No known issues (except the player bullets might be a little too fast).
 
 ### Requirements not completed
 
