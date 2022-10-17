@@ -10,8 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4001103412774483468}
   - component: {fileID: 4001103412774483469}
-  - component: {fileID: 4001103412774483470}
   - component: {fileID: 4001103412774483459}
+  - component: {fileID: -713329394157259149}
+  - component: {fileID: 3656868191109998700}
   m_Layer: 0
   m_Name: MediumPoultergeist
   m_TagString: Untagged
@@ -75,8 +76,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 14ed72ecf5183d5449264af4150511fa, type: 3}
-  m_Color: {r: 1, g: 0.964313, b: 0, a: 1}
+  m_Sprite: {fileID: 21300000, guid: f40035acd7e8bdc48abb8d2a681d58ac, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
@@ -86,21 +87,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &4001103412774483470
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4001103411116985485}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d6523f1c615f20447b7932f508707f64, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isCurrentlyColliding: 0
-  manager: {fileID: 0}
-  boundingBox: {x: 0.9, y: 1.6}
 --- !u!114 &4001103412774483459
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -113,7 +99,42 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70ca163b9392d5e46b2ca9edc04cf441, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
+  speed: 2
   enemyPosition: {x: 0, y: 0, z: 0}
   direction: {x: -1, y: 0, z: 0}
   velocity: {x: 0, y: 0, z: 0}
+--- !u!114 &-713329394157259149
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4001103411116985485}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86e7d2a25f4d7af41a3a0c59bb56f017, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bullets: []
+  bullet: {fileID: 362293259431660582, guid: 1e999d0afd5291549977ecfff80624aa, type: 3}
+  manager: {fileID: 0}
+  blueBullet: {fileID: 21300000, guid: 8f1c55308ee1258428c194bca7e63a17, type: 3}
+  redBullet: {fileID: 21300000, guid: 2e61455a2add9414ba648694fbf65191, type: 3}
+  greenBullet: {fileID: 21300000, guid: 4369e8f2d0c1eba42b90cc94b74ed43b, type: 3}
+  isME: 1
+  isHE: 0
+  isBossE: 0
+--- !u!114 &3656868191109998700
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4001103411116985485}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6523f1c615f20447b7932f508707f64, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isCurrentlyColliding: 0
+  lives: 3

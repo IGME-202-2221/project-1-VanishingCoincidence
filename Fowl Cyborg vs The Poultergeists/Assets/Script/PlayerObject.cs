@@ -7,6 +7,13 @@ public class PlayerObject : MonoBehaviour
 {
     public bool isCurrentlyColliding = false;
 
+    public int lives = 5;
+
+    public float invinsibilityTimer;
+
+    public float aliveTimer = 0;
+    public int score = 0;
+
     //---------------------------------------MOVEMENT-----------------------------
     [SerializeField]
     float speed = 1f;
@@ -28,49 +35,51 @@ public class PlayerObject : MonoBehaviour
     void Start()
     {
         playerPosition = transform.position;
+        invinsibilityTimer = 0;
     }
 
     // Update is called once per frame
     void Update()
     {
+        aliveTimer += Time.deltaTime;
+
+        if (aliveTimer >= 1f)
+        {
+            ++score;
+            aliveTimer = 0;
+        }
+
         Movement();
 
-        //if the object is colliding...
-        if (isCurrentlyColliding)
+        if(invinsibilityTimer == 0)
         {
-            //change to red
-            GetComponent<SpriteRenderer>().color = Color.red;
+            //if the object is colliding...
+            if (isCurrentlyColliding)
+            {
+                //change to red
+                GetComponent<SpriteRenderer>().color = Color.red;
+                invinsibilityTimer += Time.deltaTime;
+                --lives;
+            }
+            //if the object isn't colliding...
+            else
+            {
+                //leave it as its original color
+                GetComponent<SpriteRenderer>().color = Color.white;
+            }
         }
-        //if the object isn't colliding...
         else
         {
-            //leave it as its original color
-            GetComponent<SpriteRenderer>().color = Color.white;
+            invinsibilityTimer += Time.deltaTime;
+
+            if(invinsibilityTimer > 3f)
+            {
+                invinsibilityTimer = 0;
+            }
         }
+  
     }
 
-    /// <summary>
-    /// checks for AABB collision between two objects
-    /// </summary>
-    /// <param name="otherObject"> the object to compare against </param>
-    /// <returns></returns>
-    public bool AABBCollisionPlayer(EnemyObject otherObject)
-    {
-        //gets the bounds of two objects
-        Bounds thisObjectBounds = this.GetComponent<SpriteRenderer>().bounds;
-        Bounds otherObjectBounds = otherObject.GetComponent<SpriteRenderer>().bounds;
-
-        //if their bounds are overlapping...
-        if ((thisObjectBounds.min.x < otherObjectBounds.max.x) && (thisObjectBounds.max.x > otherObjectBounds.min.x)
-            && (thisObjectBounds.min.y < otherObjectBounds.max.y) && (thisObjectBounds.max.y > otherObjectBounds.min.y))
-        {
-            //they are colliding
-            return true;
-        }
-
-        return false;
-
-    }
 
     public void Movement()
     {
@@ -111,6 +120,26 @@ public class PlayerObject : MonoBehaviour
 
 
     }
+
+
+    public bool AABBCollision(GameObject otherObject)
+    {
+        //gets the bounds of two objects
+        Bounds thisObjectBounds = this.GetComponent<SpriteRenderer>().bounds;
+        Bounds otherObjectBounds = otherObject.GetComponent<SpriteRenderer>().bounds;
+
+        //if their bounds are overlapping...
+        if ((thisObjectBounds.min.x < otherObjectBounds.max.x) && (thisObjectBounds.max.x > otherObjectBounds.min.x)
+            && (thisObjectBounds.min.y < otherObjectBounds.max.y) && (thisObjectBounds.max.y > otherObjectBounds.min.y))
+        {
+            //they are colliding
+            return true;
+        }
+
+        return false;
+
+    }
+
 
     public void OnMove(InputAction.CallbackContext content)
     {

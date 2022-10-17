@@ -10,8 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 19377562905501772}
   - component: {fileID: 19377562905501771}
-  - component: {fileID: 19377562410006557}
-  - component: {fileID: 19377562905501774}
+  - component: {fileID: -5485437135072684931}
+  - component: {fileID: 660143818389977336}
+  - component: {fileID: -6481515433032103048}
   m_Layer: 0
   m_Name: HardPoultergeist
   m_TagString: Untagged
@@ -86,7 +87,28 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &19377562410006557
+--- !u!114 &-5485437135072684931
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 19377562905501770}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86e7d2a25f4d7af41a3a0c59bb56f017, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bullets: []
+  bullet: {fileID: 362293259431660582, guid: 1e999d0afd5291549977ecfff80624aa, type: 3}
+  manager: {fileID: 0}
+  blueBullet: {fileID: 21300000, guid: 8f1c55308ee1258428c194bca7e63a17, type: 3}
+  redBullet: {fileID: 21300000, guid: 2e61455a2add9414ba648694fbf65191, type: 3}
+  greenBullet: {fileID: 21300000, guid: 4369e8f2d0c1eba42b90cc94b74ed43b, type: 3}
+  isME: 0
+  isHE: 1
+  isBossE: 0
+--- !u!114 &660143818389977336
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -99,9 +121,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isCurrentlyColliding: 0
-  manager: {fileID: 0}
-  boundingBox: {x: 0.9, y: 1.6}
---- !u!114 &19377562905501774
+  lives: 4
+--- !u!114 &-6481515433032103048
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -110,10 +131,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 19377562905501770}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 70ca163b9392d5e46b2ca9edc04cf441, type: 3}
+  m_Script: {fileID: 11500000, guid: 58d0a6c988163a947999c3a598a411d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 1
+  speed: 2
   enemyPosition: {x: 0, y: 0, z: 0}
   direction: {x: -1, y: 0, z: 0}
   velocity: {x: 0, y: 0, z: 0}
+  switchTimer: 0
+  moveTimer: 0

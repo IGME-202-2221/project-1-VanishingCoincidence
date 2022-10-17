@@ -30,4 +30,22 @@ public class PlayerBulletObject : MonoBehaviour
         }
     }
 
+    public bool AABBCollision(GameObject otherObject)
+    {
+        //gets the bounds of two objects
+        Bounds thisObjectBounds = this.GetComponent<SpriteRenderer>().bounds;
+        Bounds otherObjectBounds = otherObject.GetComponent<SpriteRenderer>().bounds;
+
+        //if their bounds are overlapping...
+        if ((thisObjectBounds.min.x < otherObjectBounds.max.x) && (thisObjectBounds.max.x > otherObjectBounds.min.x)
+            && (thisObjectBounds.min.y < otherObjectBounds.max.y) && (thisObjectBounds.max.y > otherObjectBounds.min.y))
+        {
+            //they are colliding
+            return true;
+        }
+
+        return false;
+
+    }
+
 }

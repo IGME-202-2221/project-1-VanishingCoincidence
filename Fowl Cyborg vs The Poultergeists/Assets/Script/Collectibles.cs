@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyObject : MonoBehaviour
+public class Collectibles : MonoBehaviour
 {
     public bool isCurrentlyColliding = false;
 
@@ -28,15 +28,9 @@ public class EnemyObject : MonoBehaviour
             //leave it as its original color
             GetComponent<SpriteRenderer>().color = Color.white;
         }
-
     }
 
-    /// <summary>
-    /// checks for AABB collision between two objects
-    /// </summary>
-    /// <param name="otherObject"> the object to compare against </param>
-    /// <returns></returns>
-    public bool AABBCollisionEnemy(PlayerBulletObject otherObject)
+    public bool AABBCollision(GameObject otherObject)
     {
         //gets the bounds of two objects
         Bounds thisObjectBounds = this.GetComponent<SpriteRenderer>().bounds;
@@ -53,6 +47,4 @@ public class EnemyObject : MonoBehaviour
         return false;
 
     }
-
-
 }
