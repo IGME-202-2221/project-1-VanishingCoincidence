@@ -214,7 +214,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 71179547}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 8.75, y: 4.47, z: 0.037690725}
+  m_LocalPosition: {x: 5.45, y: 4.47, z: 0.037690725}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -247,7 +247,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3620293499656488115, guid: 4f3cc40cb23ff5048bbf4212eb9c981c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -9.167891
+      value: -7.19
       objectReference: {fileID: 0}
     - target: {fileID: 3620293499656488115, guid: 4f3cc40cb23ff5048bbf4212eb9c981c, type: 3}
       propertyPath: m_LocalPosition.y
@@ -314,7 +314,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3620293499656488115, guid: 4f3cc40cb23ff5048bbf4212eb9c981c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -10.667891
+      value: -8.690001
       objectReference: {fileID: 0}
     - target: {fileID: 3620293499656488115, guid: 4f3cc40cb23ff5048bbf4212eb9c981c, type: 3}
       propertyPath: m_LocalPosition.y
@@ -624,7 +624,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3620293499656488115, guid: 4f3cc40cb23ff5048bbf4212eb9c981c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -12.167891
+      value: -10.190001
       objectReference: {fileID: 0}
     - target: {fileID: 3620293499656488115, guid: 4f3cc40cb23ff5048bbf4212eb9c981c, type: 3}
       propertyPath: m_LocalPosition.y
@@ -731,7 +731,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3620293499656488115, guid: 4f3cc40cb23ff5048bbf4212eb9c981c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.66789
+      value: -5.6899996
       objectReference: {fileID: 0}
     - target: {fileID: 3620293499656488115, guid: 4f3cc40cb23ff5048bbf4212eb9c981c, type: 3}
       propertyPath: m_LocalPosition.y
@@ -806,7 +806,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3620293499656488115, guid: 4f3cc40cb23ff5048bbf4212eb9c981c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.16789
+      value: -4.19
       objectReference: {fileID: 0}
     - target: {fileID: 3620293499656488115, guid: 4f3cc40cb23ff5048bbf4212eb9c981c, type: 3}
       propertyPath: m_LocalPosition.y

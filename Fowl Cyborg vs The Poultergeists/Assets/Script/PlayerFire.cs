@@ -27,7 +27,7 @@ public class PlayerFire : MonoBehaviour
     
     public void Spawn()
     {
-        if (time >= 0.3f)
+        if (time >= 0.5f)
         {
             PlayerBulletObject newBullet = Instantiate(bullet, transform.position, Quaternion.identity);
 
