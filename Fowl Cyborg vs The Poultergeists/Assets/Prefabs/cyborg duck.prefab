@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2360645828366538295}
   - component: {fileID: 2360645828366538294}
-  - component: {fileID: 2360645828366538293}
   - component: {fileID: 2360645828366538292}
   m_Layer: 0
   m_Name: cyborg duck
@@ -86,22 +85,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &2360645828366538293
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2360645828366538291}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1776d20179e72cb4fb5907432e9fb5b1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 7
-  playerPosition: {x: 0, y: 0, z: 0}
-  direction: {x: 1, y: 0, z: 0}
-  velocity: {x: 0, y: 0, z: 0}
 --- !u!114 &2360645828366538292
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -129,7 +112,7 @@ MonoBehaviour:
   m_ActionEvents:
   - m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2360645828366538293}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: PlayerMovement, Assembly-CSharp
         m_MethodName: OnMove
         m_Mode: 0
