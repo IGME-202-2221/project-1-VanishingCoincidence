@@ -13,7 +13,7 @@
 -   Camera Movement: Fixed
 -   Player Health: Lives
 -   End Condition: Run out of lives
--   Scoring: Collecting point collectibles and getting enemies
+-   Scoring: Shooting enemies and staying alive for as long as possible
 
 ### Game Description
 
@@ -30,7 +30,7 @@ Travel to a different dimension as a... cyborg duck??? This mallard has a fowl r
 
 ## You Additions
 
-There are 5 different types of enemies, and some are more likely to spawn than others. I also made all of the art featured in this game.
+There are 5 different types of enemies, and some are more likely to spawn than others depending on their difficulty. I also made all of the art featured in this game.
 
 ## Sources
 
@@ -38,9 +38,9 @@ There are 5 different types of enemies, and some are more likely to spawn than o
 
 ## Known Issues
 
-_List any errors, lack of error checking, or specific information that I need to know to run your program_
+No known issues.
 
 ### Requirements not completed
 
-_If you did not complete a project requirement, notate that here_
+No requirement not met (at least, not that I know of).
 
