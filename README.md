@@ -17,7 +17,7 @@
 
 ### Game Description
 
-Travel to a different dimension as a... cyborg duck??? This mallard has a fowl reputation, so you'll have a duck-load of enemies! Make sure to duck and weave between the deadly poultergeist projectiles that come for you. Migrate towards the bread crumbs to increase your score. Don't worry; just wing-it!
+Travel to a different dimension as a... cyborg duck??? This mallard has a fowl reputation, so you'll have a duck-load of enemies! Make sure to duck and weave between the deadly poultergeist projectiles that come for you. Don't worry; just wing-it!
 
 ### Controls
 
